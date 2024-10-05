@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  src: local("Space Grotesk"), url("/fonts/SpaceGrotesk.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk.ttf") format("truetype");
+  font-weight: 400 900;
+}
+
+html {
+  font-size: 75%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb-bg) transparent;
+  user-select: none;
+
+  @media screen and (width > 30em) {
+    font-size: 87.5%;
+  }
+  @media screen and (width > 48em) {
+    font-size: 100%;
+  }
+  @media screen and (width > 62em) {
+    font-size: 112.5%;
+  }
+  @media screen and (width > 79.9375em) {
+    font-size: 125%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  &,
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  block-size: 100%;
+}
+
+body {
+  font-family: var(--fs-space-grotesk);
+  font-size: var(--base-fs);
+  font-weight: var(--fw-regular);
+  line-height: var(--base-lh);
+  background-color: var(--body-bg);
+}
+
+::-webkit-scrollbar {
+  inline-size: 10px;
+  block-size: 10px;
+
+  &-thumb {
+    background-color: var(--scroll-thumb-bg);
+    border-radius: calc(var(--base-br) * 0.35);
+  }
+
+  &-track {
+    background-color: transparent;
+    box-shadow: 0 0 8px hwb(var(--shadow) / 0.15) inset;
+  }
+}

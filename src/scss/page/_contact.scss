@@ -1,0 +1,21 @@
+.contact {
+  margin-block-start: calc(var(--base-margin) * 2);
+  width: min(85vw, 640px);
+  margin-inline: auto;
+
+  p {
+    text-align: center;
+    font-size: calc(var(--base-fs) * 1.2);
+
+    @media screen and (width > 768px) {
+      font-size: calc(var(--base-fs) * 1.05);
+    }
+  }
+}
+
+.contact-section {
+  h2 {
+    font-size: calc(var(--base-fs) * 2.75);
+    text-align: center;
+  }
+}

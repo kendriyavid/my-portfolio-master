@@ -1,0 +1,96 @@
+:root {
+  --base-fs: 1rem;
+  --base-padding: 0.5em;
+  --base-margin: 0.5em;
+  --base-br: 20px;
+  --base-lh: 1.5;
+  --base-gap: 0.5em;
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+  --fw-xbold: 800;
+  --fw-black: 900;
+
+  /* Font Stacks */
+  --fs-space-grotesk: "Space Grotesk", serif;
+
+  /* Color Palletes */
+  /* Light Mode Color Pallete */
+  --lightest-blue: hwb(250 95% 0%);
+  --light-blue: hwb(250 92% 0%);
+  --regular-blue: hwb(224 56% 9%);
+  --semi-blue: hwb(228 30% 17%);
+  --dark-blue: hwb(224 20% 30%);
+
+  /* Dark Mode Color Pallete */
+  --lightest-orange: hwb(37 89% 6%);
+  --light-orange: hwb(37 81% 20%);
+  --regular-cyan: hwb(178 39% 50%);
+  --dark-cyan: hwb(187 30% 60%);
+  --darkest-cyan: hwb(187 21% 72%);
+
+  /*
+  * *** Website Colors *** *
+  */
+  --shadow: 0 0% 100%;
+  --body-bg: var(--lightest-blue);
+  --header-bg: hwb(0 95% 0% /0.8);
+  --heading-color: var(--dark-blue);
+  --text-color: var(--semi-blue);
+  --link-color: var(--dark-blue);
+  --section-heading-border-bg: var(--regular-blue);
+
+  /* Project Section */
+  --project-content-bg: hwb(0 95% 5% /0.9);
+  --project-img-bg: hwb(0 95% 20% /0.6);
+  --icon-color: hwb(224 10% 20%);
+
+  /* Header */
+  --hamburger-bg-img: var(--regular-blue), var(--dark-blue);
+  --hamburger-bg: var(--semi-blue);
+  --navigation-bg: var(--light-blue);
+
+  /* Buttons */
+  --primary-btn-text: var(--light-blue);
+  --primary-btn-bg: var(--dark-blue);
+
+  /* Scrollbar */
+  --scroll-thumb-bg: var(--regular-blue);
+
+  /* Avatar border */
+  --avatar-container-border: var(--regular-blue);
+  --avatar-top-bg: hwb(0 70% 30% /0.7);
+
+  @media (prefers-color-scheme: dark) {
+    --body-bg: var(--dark-cyan);
+    --header-bg: hwb(187 30% 60% / 0.8);
+    --link-color: var(--lightest-orange);
+    --text-color: var(--light-orange);
+    --heading-color: var(--lightest-orange);
+    --section-heading-border-bg: var(--light-orange);
+
+    /* Projects Section */
+    --project-content-bg: hwb(187 20% 70% / 0.9);
+    --project-img-bg: hwb(187 20% 70% / 0.7);
+    --icon-color: hwb(187 31% 5%);
+
+    /* Header */
+    --hamburger-bg-img: var(--lightest-orange), var(--light-orange);
+    --hamburger-bg: var(--light-orange);
+    --navigation-bg: var(--regular-cyan);
+
+    /* Buttons */
+    --primary-btn-text: var(--light-orange);
+    --primary-btn-bg: var(--darkest-cyan);
+
+    /* Scrollbar */
+    --scroll-thumb-bg: var(--darkest-cyan);
+
+    /* Avatar border */
+    --avatar-container-border: var(--light-orange);
+    --avatar-top-bg: hwb(187 20% 70% / 0.6);
+  }
+}

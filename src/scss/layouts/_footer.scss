@@ -1,0 +1,22 @@
+.footer {
+  padding-block: calc(var(--base-padding) * 12) calc(var(--base-padding) * 3);
+  gap: calc(var(--base-gap) * 20) 0;
+
+  .social-link {
+    transition: opacity 250ms ease;
+
+    i {
+      font-size: calc(var(--base-fs) * 1.9);
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  @media screen and (width > 768px) {
+    .social-link i {
+      font-size: calc(var(--base-fs) * 1.5);
+    }
+  }
+}

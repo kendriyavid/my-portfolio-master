@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Harshdeep Singh ,Portfolio, Harshdeep Singh Portfolio,"
+    />
+    <meta
+      name="description"
+      content="This is my portfolio website created using SCSS & Javascript and deployed on Vercel"
+    />
+    <meta name="author" content="Harshdeep Singh" />
+    <meta name="contact" content="harshdeepkv@gmail.com" />
+    <meta name="robots" content="index,follow" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-------------- Open Graph Meta Tags -------------->
+    <meta property="og:title" content="Portfolio Website" />
+    <meta property="og:site_name" content="Harshdeep Singh" />
+    <!-- <meta property="og:url" content="https://rahulbaran.vercel.app" /> -->
+    <meta
+      property="og:description"
+      content="It is a portfolio website created using scss & Javascript and deployed on Vercel"
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="/meta/front.png" />
+
+    <!-------------------- Favicon -------------------->
+    <link
+      rel="shortcut icon"
+      href="/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/favicons/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="/favicons/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <!----------------- Phospher Icons ---------------->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"
+    />
+
+    <script type="module" src="/src/js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-------------------------- Header -------------------------->
+      <header
+        class="flex justify-space-between align-center header navigation-header"
+      >
+        <a href="/" class="logo" title="logo">
+          <picture>
+            <!-- <source srcset="/favicons/logo.avif" type="image/avif" />
+            <source srcset="/favicons/logo.webp" type="image/webp" /> -->
+            <img
+              src="/favicons/harshdeep.jpg"
+              alt="Logo"
+              loading="eager"
+              width="48"
+              height="48"
+            />
+          </picture>
+        </a>
+
+        <div
+          class="flex flex-col align-center justify-center gap-y-8 navigation-container"
+        >
+          <nav class="navigation">
+            <ul class="flex flex-col align-center gap-3 navigation-menu">
+              <li><a href="#home" class="navigation-link">Home</a></li>
+              <li><a href="#about" class="navigation-link">About</a></li>
+              <li><a href="#projects" class="navigation-link">Projects</a></li>
+              <li><a href="#contact" class="navigation-link">Contact</a></li>
+            </ul>
+          </nav>
+
+
+        <div class="hamburger-btn-wrapper">
+          <button
+            aria-label="toggle navigation"
+            class="flex flex-col align-flex-end gap-y-1 hamburger-btn"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <!----------------------- Main Container  --------------------->
+      <main class="container">
+        <!-------------- Home Section --------------->
+        <section
+          class="flex flex-col align-flex-start justify-center section-wrapper home-wrapper"
+          id="home"
+        >
+          <div class="intro">
+            <p>Namaste, I am</p>
+            <h1 class="flex flex-col">
+              <span>Harshdeep Singh.</span>
+              <span>I am a Software Developer.</span>
+            </h1>
+          </div>
+
+          <div class="details">
+            <p>
+              "Passionate software developer focused on backend systems, AI, and cloud solutions. Currently pursuing my degree at VIT, I build dynamic web platforms and AI models, leveragin cloud for scalable, impactful solutions."
+
+
+
+
+
+
+
+            </p>
+            <a href="#projects" class="btn btn-primary">
+              Check out my projects!
+            </a>
+          </div>
+        </section>
+
+        <!-------------- About Section ------------->
+        <section class="section-wrapper about-wrapper" id="about">
+          <h2 class="flex align-center justify-center gap-1 section-heading">
+            <span></span>
+            <span>About Me</span>
+            <span></span>
+          </h2>
+
+          <div
+            class="flex flex-col align-center gap-y-10 about-content-container"
+          >
+            <div class="flex flex-col gap-2 about">
+              <p>
+                Namaste! I'm Harshdeep, Motivated computer science student at VIT, skilled in backend development, AI, and cloud technologies. With hands-on experience in building web applications, AI models, and deploying scalable systems, I’m driven by curiosity and a passion for solving real-world problems. Always excited to work on cutting-edge tech and open to new learning opportunities.
+              </p>
+              
+              <p>
+                Here are a few technologies I have been working with recently:
+              </p>
+
+              <div class="flex gap-8 skills-container">
+                <ul>
+                  <li><code>JavaScript (ES6+)</code></li>
+                  <li><code>React</code></li>
+                  <li><code>Golang</code></li>
+                  <li><code>Python</code></li>
+                </ul>
+
+                <ul>
+                  <li><code>Node.js</code></li>
+                  <li><code>MongoDB</code></li>
+                  <li><code>ExpressJS</code></li>
+                  <li><code>Tensorflow</code></li>
+                </ul>
+                <ul></ul>
+
+                  <!-- <li><code></code></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="avatar-wrapper">
+              <picture>
+                <!-- <source srcset="/avatar/avatar.avif" type="image/avif" />
+                <source srcset="/avatar/avatar.webp" type="image/webp" /> -->
+                <img
+                  src="/avatar/avatar.jpg"
+                  alt="Avatar"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="300"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <!-- ---------- Projects Section -------------->
+        <section class="section-wrapper projects-wrapper" id="projects">
+          <h2 class="flex align-center justify-center gap-1 section-heading">
+            <span></span>
+            <span>My Works</span>
+            <span></span>
+          </h2>
+
+          <div class="flex flex-wrap flex-col align-center gap-8 projects">
+            <div class="project">
+              <div class="project-img">
+                <picture>
+                  <img
+                    src="/projects-images/zeity.png"
+                    alt="movie app"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <a
+                    href="https://resumebuilder-un89.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Zeity</a
+                  >
+                </h3>
+                <div class="project-info">
+                  <p>
+                    Zeity is a resume builder web application built with React.js, Node.js, and MongoDB Atlas. It allows users to create and customize professional resumes, offering multiple templates and intuitive editing options. The backend is hosted on Render's static site CDN for fast, reliable performance.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-x-3 project-tools">
+                  <code>ReactJS</code>
+                  <code>ExpressJS</code>
+                  <code>MongoDB</code>
+                  <code>Render</code>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://resumebuilder-un89.onrender.com/"
+                    target="_blank"
+                    title="live"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-arrow-square-out"></i>
+                  </a>
+                  <a
+                    href="https://github.com/kendriyavid/ResumeBuilder"
+                    target="_blank"
+                    title="source code"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-img">
+                <picture>
+                  <img
+                    src="/projects-images/gocompress.png"
+                    alt="school site"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <a
+                    href="https://github.com/kendriyavid/FileCompressor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GoCompress</a
+                  >
+                </h3>
+                <div class="project-info">
+                  <p>
+                    GoCompress is a terminal-based application developed in Golang that supports file compression and decompression using three algorithms: RLE, Huffman encoding, and LZW. It efficiently compresses binary data and allows users to manage file sizes directly from the command line.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-x-3 project-tools">
+                  <code>Golang</code>
+                  <code>Algorithms</code>
+                  <code>Cobra</code>
+                </div>
+
+                <div class="project-links">
+                  <!-- <a
+                    href="https://github.com/kendriyavid/FileCompressor/"
+                    target="_blank"
+                    title="live"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-arrow-square-out"></i>
+                  </a> -->
+                  <a
+                    href="https://github.com/kendriyavid/FileCompressor"
+                    target="_blank"
+                    title="source code"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-img">
+                <picture>
+                  <img
+                    src="/projects-images/captiongenerator.png"
+                    alt="class tests management app"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <a
+                    href="https://github.com/kendriyavid/CaptionGenerator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Caption Generator</a
+                  >
+                </h3>
+                <div class="project-info">
+                  <p>
+                    The caption generator combines VGG16 for image feature extraction with an LSTM network for sequential caption generation. It processes images and text to predict captions, trained on Flickr8k, and evaluates performance using BLEU scores.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-x-3 project-tools">
+                  <code>Tensorflow</code>
+                  <code>Keras</code>
+                  <code>Python</code>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/kendriyavid/CaptionGenerator"
+                    target="_blank"
+                    title="source code"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+          <div class="flex justify-center projects-btn-container">
+            <a
+              href="https://github.com/kendriyavid"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Know More</a
+            >
+          </div>
+        </section>
+<!-- 
+      </section>
+      <section class="section-wrapper leetcode-wrapper" id="leetcode">
+        <h2 class="flex align-center justify-center gap-1 section-heading">
+          <span></span>
+        </h2>
+        <div class="flex flex-col align-center gap-8 leetcode">
+          <div id="leetcode-stats">
+            <p>Loading LeetCode Stats...</p>
+          </div>
+        </div>              </section>         -->
+      </main>
+
+      <!-------------------------- Footer ----------------------->
+      <footer class="flex flex-col align-center footer" id="contact">
+        <section class="contact-section">
+          <!-- <h2>Get In Touch</h2>
+
+          <div
+            class="contact flex flex-col align-center justify-center gap-y-6"
+          >
+            <p>
+              I am currently searching for new opportunities as a
+              <strong>Frontend Developer</strong>. Please feel free to contact
+              me anytime, and I will get back to you as soon as possible.
+            </p>
+
+            <a href="mailto:harshdeepkv@gmail.com" class="btn btn-primary"
+              >Say Hello!</a
+       
+            >
+          </div> -->
+
+        <div class="flex flex-col gap-y-3">
+          <div class="flex justify-center gap-x-4 social-wrapper">
+            <a
+              href="https://github.com/kendriyavid"
+              class="social-link"
+              title="Github"
+              rel="noopener noreferrer"
+            >
+              <i class="ph ph-github-logo"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/harshdeep-singh-8246b013a/"
+              class="social-link"
+              title="Linkedin"
+              rel="noopener noreferrer"
+            >
+              <i class="ph ph-linkedin-logo"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
